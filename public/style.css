@@ -31,10 +31,21 @@ footer {
 
 a {
     color: var(--accent);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 a:hover {
     cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 h1 {
@@ -74,10 +85,14 @@ footer p {
     margin: 4vh 0vw;
 }
 
+.nav a {
+    margin: 0vh 1vw;
+}
+
 .horizontal-list {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 3vw;
     justify-content: center;
 }
 
@@ -87,8 +102,8 @@ footer p {
 }
 
 .title {
-    margin: 16vh 0vw 8vh 0vw;
-    font-size: 8em;
+    margin: 16vh 2vw 8vh 2vw;
+    font-size: 8vw;
     font-weight: bold;
 }
 
@@ -125,4 +140,14 @@ footer p {
 
 .wave-layer1 {
     background-image: url('/images/wave.svg');
+}
+
+@media screen and (max-width: 650px) {
+    .title {
+        font-size: 4em;
+    }
+
+    section {
+        margin: 16vh 8vw 16vh 8vw;
+    }
 }

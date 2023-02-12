@@ -4,18 +4,19 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/M1lken01/personal-site.git"
+    "url": "https://github.com/M1lken01/personal-site"
   },
   "author": "M1lken01",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/M1lken01/personal-site/issues"
   },
-  "homepage": "https://github.com/M1lken01/personal-site#readme",
+  "homepage": "https://github.com/M1lken01/personal-site/blob/main/README.md",
   "dependencies": {
     "body-parser": "^1.20.1",
     "ejs": "^3.1.8",
