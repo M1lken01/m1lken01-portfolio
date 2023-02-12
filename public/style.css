@@ -2,6 +2,7 @@
 
 :root {
     --background: #0d0f10;
+    --background-alt: #101314;
     --text: #d1cdc8;
     --accent: #371f96;
 }
@@ -40,6 +41,9 @@ a {
 
 a:hover {
     cursor: pointer;
+}
+
+footer a:hover {
     letter-spacing: 0.05em;
     transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -77,8 +81,16 @@ p {
 }
 
 section {
-    margin: 16vh 48vw 32vh 8vw;
+    margin: 16vh 8vw 32vh 8vw;
     text-align: left;
+}
+
+section>p {
+    margin: 0vh 48vw 0vh 0vw;
+}
+
+section>h2 {
+    margin: 2vh 0vw;
 }
 
 footer p {
@@ -142,12 +154,60 @@ footer p {
     background-image: url('/images/wave.svg');
 }
 
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.card {
+    background-color: var(--background-alt);
+    width: 100%;
+    min-height: 16vh;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.card:hover {
+    width: 110%;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
 @media screen and (max-width: 650px) {
     .title {
         font-size: 4em;
     }
 
     section {
-        margin: 16vh 8vw 16vh 8vw;
+        margin: 16vh 8vw 32vh 8vw;
+    }
+
+    section>p {
+        margin: 0;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        min-height: unset;
+    }
+
+    .card p {
+        display: none;
     }
 }
