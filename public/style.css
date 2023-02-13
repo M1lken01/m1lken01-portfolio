@@ -186,6 +186,48 @@ footer p {
     -o-transition: 0.4s;
 }
 
+.vertical-chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    gap: 1vw;
+    margin: 5vh 0;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    min-width: 10%;
+}
+
+.bar {
+    background-color: var(--accent);
+    width: 2vw;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.bar:hover {
+    background-color: var(--accent);
+    width: 3vw;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.label {
+    text-align: center;
+}
+
 @media screen and (max-width: 650px) {
     .title {
         font-size: 4em;
