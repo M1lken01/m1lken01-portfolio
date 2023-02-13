@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
 :root {
     --background: #0d0f10;
     --background-alt: #101314;
@@ -114,7 +113,7 @@ footer p {
 }
 
 .title {
-    margin: 16vh 2vw 8vh 2vw;
+    margin: 16vh 4vw 8vh 4vw;
     font-size: 8vw;
     font-weight: bold;
 }
@@ -157,7 +156,7 @@ footer p {
 .cards {
     display: flex;
     flex-direction: row;
-    gap: 5vw;
+    gap: 1vw;
 }
 
 .card {
@@ -165,11 +164,11 @@ footer p {
     width: 100%;
     min-height: 16vh;
     padding: 20px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
     transition: 0.4s;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
@@ -192,21 +191,37 @@ footer p {
     justify-content: center;
     align-items: end;
     gap: 1vw;
-    margin: 5vh 0;
+    margin: 8vh 0;
 }
 
 .data-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     gap: 2vh;
+    background-color: var(--background-alt);
+    border-radius: 6px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     min-width: 10%;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 
-.bar {
-    background-color: var(--accent);
-    width: 2vw;
+.vertical-chart .data-container {
+    min-height: 50vh;
+}
+
+.vertical-chart .data-container:hover {
+    min-width: 12%;
     transition: 0.4s;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
@@ -214,42 +229,80 @@ footer p {
     -o-transition: 0.4s;
 }
 
-.bar:hover {
+.v-bar {
     background-color: var(--accent);
-    width: 3vw;
-    transition: 0.4s;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -ms-transition: 0.4s;
-    -o-transition: 0.4s;
+    width: 30%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .label {
     text-align: center;
 }
 
+.horizontal-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1vh;
+    margin: 8vh 0;
+    display: none;
+}
+
+.horizontal-chart .data-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1vw;
+    margin: 0.5vh 0;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    min-width: 100%;
+}
+
+.h-bar {
+    background-color: var(--accent);
+    height: 20px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.horizontal-chart .label {
+    text-align: left;
+}
+
 @media screen and (max-width: 650px) {
     .title {
         font-size: 4em;
     }
-
     section {
         margin: 16vh 8vw 32vh 8vw;
     }
-
     section>p {
         margin: 0;
     }
-
     .cards {
         flex-direction: column;
+        gap: 2vh;
     }
-
     .card {
         min-height: unset;
     }
-
     .card p {
+        display: none;
+    }
+    .horizontal-chart {
+        display: flex;
+    }
+    .vertical-chart {
         display: none;
     }
 }

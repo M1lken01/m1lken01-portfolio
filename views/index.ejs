@@ -12,9 +12,7 @@
     <meta property="og:title" content="m1lk3n.net" />
     <meta property="og:description" content="m1lk3n.net" />
     <meta property="og:url" content="https://m1lk3n.net/" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINcclRMA=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINcclRMA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -23,48 +21,81 @@
 
 <body>
     <main id="home">
-        <h1 class="center title subtitle">Welcome to My Site</h1>
-        <p class="center">This is a default HTML page with a basic boilerplate.</p>
+        <h1 class="center title subtitle">Welcome to My Portfolio</h1>
+        <p class="center">This is definitely not a default HTML page with a basic boilerplate.</p>
     </main>
     <section id="about">
         <h2 class="subtitle">About Me</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas mollitia ipsa expedita ipsum quibusdam
-            possimus quam culpa est officia illo dolorem, modi earum doloremque. Fugit, nemo. Rem quam esse repudiandae.
+        <p>My name is Artner Milan, and I am a
+            <script>
+                document.write(Math.floor((new Date() - new Date("2006-06-16")) / (1000 * 60 * 60 * 24 * 365.25)));
+            </script> years old software developer student. I am currently in high school and I have a strong passion for software engineering. I am actively working towards improving my skills and knowledge in the field and I am eager to pursue a career
+            in software engineering in the future.
         </p>
     </section>
     <section id="skills">
         <h2 class="subtitle">My Skills</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas mollitia ipsa expedita ipsum quibusdam
-            possimus quam culpa est officia illo dolorem, modi earum doloremque. Fugit, nemo. Rem quam esse repudiandae.
+        <p>As a young and passionate software developer, I have a strong foundation in multiple programming languages including JavaScript, Python, and C#. I have been coding since 2017 and I am always eager to learn and expand my skills.
         </p>
+        <!-- TODO: cleanup the css classes -->
         <div class="vertical-chart">
             <div class="data-container">
-                <div class="bar" style="height: 160px"></div>
+                <div class="v-bar" style="height: 12vh"></div>
                 <h4 class="label">Java</h4>
             </div>
             <div class="data-container">
-                <div class="bar" style="height: 200px"></div>
-                <h4 class="label">Kotlin</h3>
+                <div class="v-bar" style="height: 16vh"></div>
+                <h4 class="label">Kotlin</h4>
             </div>
             <div class="data-container">
-                <div class="bar" style="height: 240px"></div>
-                <h4 class="label">C#</h3>
+                <div class="v-bar" style="height: 20vh"></div>
+                <h4 class="label">C#</h4>
             </div>
             <div class="data-container">
-                <div class="bar" style="height: 120px"></div>
-                <h4 class="label">C++</h3>
+                <div class="v-bar" style="height: 10vh"></div>
+                <h4 class="label">C++</h4>
             </div>
             <div class="data-container">
-                <div class="bar" style="height: 240px"></div>
-                <h4 class="label">MySql</h3>
+                <div class="v-bar" style="height: 20vh"></div>
+                <h4 class="label">MySql</h4>
             </div>
             <div class="data-container">
-                <div class="bar" style="height: 360px"></div>
-                <h4 class="label">Python</h3>
+                <div class="v-bar" style="height: 34vh"></div>
+                <h4 class="label">Python</h4>
             </div>
             <div class="data-container">
-                <div class="bar" style="height: 400px"></div>
+                <div class="v-bar" style="height: 38vh"></div>
                 <h4 class="label">JavaScript</h4>
+            </div>
+        </div>
+        <div class="horizontal-chart">
+            <div class="data-container">
+                <h4 class="label">Java</h4>
+                <div class="h-bar" style="width: 24vw"></div>
+            </div>
+            <div class="data-container">
+                <h4 class="label">Kotlin</h4>
+                <div class="h-bar" style="width: 28vw"></div>
+            </div>
+            <div class="data-container">
+                <h4 class="label">C#</h4>
+                <div class="h-bar" style="width: 36vw"></div>
+            </div>
+            <div class="data-container">
+                <h4 class="label">C++</h4>
+                <div class="h-bar" style="width: 16vw"></div>
+            </div>
+            <div class="data-container">
+                <h4 class="label">MySql</h4>
+                <div class="h-bar" style="width: 36vw"></div>
+            </div>
+            <div class="data-container">
+                <h4 class="label">Python</h4>
+                <div class="h-bar" style="width: 52vw"></div>
+            </div>
+            <div class="data-container">
+                <h4 class="label">JavaScript</h4>
+                <div class="h-bar" style="width: 60vw"></div>
             </div>
         </div>
     </section>
@@ -95,14 +126,13 @@
         <h2 class="subtitle">
             Contact
         </h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas mollitia ipsa expedita ipsum quibusdam
-            possimus quam culpa est officia illo dolorem, modi earum doloremque. Fugit, nemo. Rem quam esse repudiandae.
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas mollitia ipsa expedita ipsum quibusdam possimus quam culpa est officia illo dolorem, modi earum doloremque. Fugit, nemo. Rem quam esse repudiandae.
         </p>
     </section>
     <div class="wave wave-layer1">
     </div>
     <footer>
-        <h2><a href="/home">m1lken01.ddns.net</a></h2>
+        <h2><a href="/home">m1lken01.iDontOwnADomainYetSadface.net</a></h2>
         <p class="nav">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -122,14 +152,12 @@
                 </a>
             </li>
             <li>
-                <a href="/facebook" target="_blank"><img class="icon"
-                        src="./images/icons/icons8-facebook-512.png"></img>
+                <a href="/facebook" target="_blank"><img class="icon" src="./images/icons/icons8-facebook-512.png"></img>
                     </img>
                 </a>
             </li>
             <li>
-                <a href="/instagram" target="_blank"><img class="icon"
-                        src="./images/icons/icons8-instagram-512.png"></img>
+                <a href="/instagram" target="_blank"><img class="icon" src="./images/icons/icons8-instagram-512.png"></img>
                     </img>
                 </a>
             </li>
@@ -138,8 +166,7 @@
                 </a>
             </li>
             <li>
-                <a href="/steam" target="_blank"><img class="icon"
-                        src="./images/icons/icons8-steam-circled-512.png"></img>
+                <a href="/steam" target="_blank"><img class="icon" src="./images/icons/icons8-steam-circled-512.png"></img>
                     </img>
                 </a>
             </li>
