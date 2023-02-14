@@ -81,6 +81,7 @@ p {
 
 section {
     margin: 16vh 8vw 32vh 8vw;
+    margin: 6vh 8vw 10vh 8vw;
     text-align: left;
 }
 
@@ -144,12 +145,10 @@ footer p {
 .wave {
     aspect-ratio: 960/100;
     width: 100%;
+    margin-top: 20vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.wave-layer1 {
     background-image: url('/images/wave.svg');
 }
 
@@ -185,13 +184,23 @@ footer p {
     -o-transition: 0.4s;
 }
 
-.vertical-chart {
+.link {
+    float: right;
+}
+
+.chart {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: end;
     gap: 1vw;
     margin: 8vh 0;
+    flex-direction: row;
+    align-items: end;
+}
+
+.horizontal-chart {
+    flex-direction: column;
+    align-items: start;
+    display: none;
 }
 
 .data-container {
@@ -229,33 +238,7 @@ footer p {
     -o-transition: 0.4s;
 }
 
-.v-bar {
-    background-color: var(--accent);
-    width: 30%;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-}
-
-.label {
-    text-align: center;
-}
-
-.horizontal-chart {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 1vh;
-    margin: 8vh 0;
-    display: none;
-}
-
 .horizontal-chart .data-container {
-    display: flex;
-    flex-direction: column;
     justify-content: start;
     align-items: start;
     gap: 1vw;
@@ -265,9 +248,8 @@ footer p {
     min-width: 100%;
 }
 
-.h-bar {
+.bar {
     background-color: var(--accent);
-    height: 20px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -275,16 +257,29 @@ footer p {
     -o-border-radius: 4px;
 }
 
+.vertical-chart .bar {
+    width: 30%;
+}
+
+.horizontal-chart .bar {
+    height: 20px;
+}
+
+.vertical-chart .label {
+    text-align: center;
+}
+
 .horizontal-chart .label {
     text-align: left;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
     .title {
         font-size: 4em;
     }
     section {
         margin: 16vh 8vw 32vh 8vw;
+        margin: 4vh 8vw 8vh 8vw;
     }
     section>p {
         margin: 0;
