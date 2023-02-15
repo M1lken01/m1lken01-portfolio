@@ -159,9 +159,10 @@ footer p {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: var(--background-alt);
     width: 100%;
-    min-height: 16vh;
     padding: 20px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -184,8 +185,11 @@ footer p {
     -o-transition: 0.4s;
 }
 
-.link {
-    float: right;
+.link-container {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-top: 2vh;
 }
 
 .chart {
